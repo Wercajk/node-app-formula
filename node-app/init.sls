@@ -4,6 +4,7 @@ nvm_pkgs:
     - names:
       - git
       - screen
+      - g++
 
 # Install nvm
 nvm_install:
