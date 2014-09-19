@@ -1,0 +1,16 @@
+node-app:
+  - name: 'SomeProject'
+    path: '/www'
+    nvm:
+      - version: '0.11'
+      - version: '0.10'
+        global_packages:
+          - dredd
+          - bower
+  - name: 'SomeOtherProject'
+    path: '/www/ui'
+    setup:
+      run: 'bower install'
+      unless: 'ls bower_components'
+    nvm:
+      - version: '0.11'
